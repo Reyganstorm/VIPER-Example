@@ -15,6 +15,10 @@
 		E8599F32294C4C4D001990BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8599F30294C4C4D001990BC /* LaunchScreen.storyboard */; };
 		E8599F3F294C4D74001990BC /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8599F3E294C4D74001990BC /* DateService.swift */; };
 		E8599F41294C4E30001990BC /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8599F40294C4E30001990BC /* WeatherService.swift */; };
+		E8599F44294C4F61001990BC /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8599F43294C4F61001990BC /* WelcomePresenter.swift */; };
+		E8599F46294C501E001990BC /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8599F45294C501E001990BC /* WelcomeRouter.swift */; };
+		E8599F48294C509C001990BC /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8599F47294C509C001990BC /* WelcomeInteractor.swift */; };
+		E8599F4A294C5109001990BC /* WelcomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8599F49294C5109001990BC /* WelcomeModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		E8599F33294C4C4D001990BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8599F3E294C4D74001990BC /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
 		E8599F40294C4E30001990BC /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		E8599F43294C4F61001990BC /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		E8599F45294C501E001990BC /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		E8599F47294C509C001990BC /* WelcomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		E8599F49294C5109001990BC /* WelcomeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +68,10 @@
 		E8599F24294C4C4B001990BC /* VIPER Example */ = {
 			isa = PBXGroup;
 			children = (
+				E8599F42294C4F0A001990BC /* Welcome */,
 				E8599F3B294C4D2A001990BC /* API */,
 				E8599F3A294C4CC7001990BC /* Resources */,
 				E8599F39294C4CAE001990BC /* Application */,
-				E8599F29294C4C4B001990BC /* ViewController.swift */,
 			);
 			path = "VIPER Example";
 			sourceTree = "<group>";
@@ -80,7 +88,6 @@
 		E8599F3A294C4CC7001990BC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E8599F2B294C4C4B001990BC /* Main.storyboard */,
 				E8599F2E294C4C4D001990BC /* Assets.xcassets */,
 				E8599F30294C4C4D001990BC /* LaunchScreen.storyboard */,
 				E8599F33294C4C4D001990BC /* Info.plist */,
@@ -95,6 +102,19 @@
 				E8599F40294C4E30001990BC /* WeatherService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		E8599F42294C4F0A001990BC /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				E8599F2B294C4C4B001990BC /* Main.storyboard */,
+				E8599F29294C4C4B001990BC /* ViewController.swift */,
+				E8599F43294C4F61001990BC /* WelcomePresenter.swift */,
+				E8599F45294C501E001990BC /* WelcomeRouter.swift */,
+				E8599F47294C509C001990BC /* WelcomeInteractor.swift */,
+				E8599F49294C5109001990BC /* WelcomeModuleBuilder.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +189,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8599F41294C4E30001990BC /* WeatherService.swift in Sources */,
+				E8599F48294C509C001990BC /* WelcomeInteractor.swift in Sources */,
+				E8599F44294C4F61001990BC /* WelcomePresenter.swift in Sources */,
 				E8599F2A294C4C4B001990BC /* ViewController.swift in Sources */,
 				E8599F26294C4C4B001990BC /* AppDelegate.swift in Sources */,
+				E8599F4A294C5109001990BC /* WelcomeModuleBuilder.swift in Sources */,
+				E8599F46294C501E001990BC /* WelcomeRouter.swift in Sources */,
 				E8599F28294C4C4B001990BC /* SceneDelegate.swift in Sources */,
 				E8599F3F294C4D74001990BC /* DateService.swift in Sources */,
 			);
